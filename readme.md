@@ -4,7 +4,7 @@
 This repository offers two kinds of solutions. First, it provides the functionality to create animated maps in HTML 
 format for timeseries datasets. Second, it adds the ability to convert HTML animated maps into animated gif images.
 
-As far as the dataset is conserned, you need to have at least date, location (country), and value columns. Below you can
+As far as the dataset is concerned, you need to have at least date, location (country), and value columns. Below you can
 find a sample dataset retrieved from the [Windsor](windsor.ai) website. This dataset is a combination of various ad platforms
 such as Google Ads, Facebook ads etc., during October 2022.
 
@@ -63,7 +63,7 @@ generator.to_gif(driver_option="Chrome")
 
 ### Result
 The final product are an HTML file and a gif image.
-![](world_map.gif)
+![](Images/world_map.gif)
 
 
 For more on connecting various ad platforms and plotting them into animated maps, visit: https://onboard.windsor.ai/
