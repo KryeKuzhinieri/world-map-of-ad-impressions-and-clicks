@@ -62,7 +62,7 @@ generator.to_gif(driver_option="Chrome")
 ```
 
 ### Result
-The final product are an HTML file and a gif image.
+The final products are an HTML file and a gif image.
 ![](Images/world_map.gif)
 
 
