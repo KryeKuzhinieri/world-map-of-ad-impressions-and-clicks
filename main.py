@@ -6,7 +6,7 @@ from map_converter import Map
 
 def main():
     # Fetch dataset
-    client = Client(api_key="df7b9b3ee49ab38b121e775f86be26ca0011")
+    client = Client(api_key="your-key")
     request = client.connectors(
         date_from="2022-10-01",
         date_to="2022-11-01",
