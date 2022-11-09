@@ -150,6 +150,7 @@ class Map:
     def _create_geojson_features(self, data, caption, date_column="date", value_column="clicks"):
         """
         Generates features for the TimestamedGeoJson map. It saves the values into self._features.
+        This function was taken from: https://www.linkedin.com/pulse/visualizing-nyc-bike-data-interactive-animated-maps-folium-toso/
 
         Parameters
         ----------
