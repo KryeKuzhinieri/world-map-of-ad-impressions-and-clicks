@@ -19,7 +19,7 @@ def main():
     generator = Map()
     # If dataset does not have latitude and longitude, find them.
     dataset = generator.get_lat_long(dataset, location_column="country")
-    # dataset = pd.read_csv("temp.csv", sep="\t")
+    # dataset = pd.read_csv("Dataset/sample_data.csv", sep="\t")
 
     # Create HTML map
     generator.create_map(
