@@ -6,7 +6,7 @@ from map_converter import Map
 
 def main():
     # Fetch dataset
-    client = Client(api_key="df7b9b3ee49ab38b121e775f86be26ca0011")
+    client = Client(api_key="your-key")
     request = client.connectors(
         date_from="2022-10-01",
         date_to="2022-11-01",
@@ -19,7 +19,7 @@ def main():
     generator = Map()
     # If dataset does not have latitude and longitude, find them.
     dataset = generator.get_lat_long(dataset, location_column="country")
-    # dataset = pd.read_csv("temp.csv", sep="\t")
+    # dataset = pd.read_csv("Dataset/sample_data.csv", sep="\t")
 
     # Create HTML map
     generator.create_map(
