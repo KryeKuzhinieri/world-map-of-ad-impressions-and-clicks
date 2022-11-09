@@ -5,7 +5,7 @@ This repository offers two kinds of solutions. First, it provides the functional
 format for timeseries datasets. Second, it adds the ability to convert HTML animated maps into animated gif images.
 
 As far as the dataset is concerned, you need to have at least date, location (country), and value columns. Below you can
-find a sample dataset retrieved from the [Windsor](windsor.ai) website. This dataset is a combination of various ad platforms
+find a sample dataset retrieved from the [Windsor](https://windsor.ai) website. This dataset is a combination of various ad platforms
 such as Google Ads, Facebook ads etc., during October 2022.
 
 
@@ -22,7 +22,7 @@ such as Google Ads, Facebook ads etc., during October 2022.
 Running the code is pretty simple. Firstly, install the dependencies in the `requirements.txt` file. You can do that
 by running `pip install -r requirements.txt`.
 
-Next, you can either use your own dataset or fetch the data directly into python using [Windsor's](windsor.ai) token.
+Next, you can either use your own dataset or fetch the data directly into python using [Windsor's](https://windsor.ai) token.
 You can do this by running
 
 ```python
