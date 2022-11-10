@@ -1,4 +1,4 @@
-# Creating TimestamedGeoJson Folium Animated Maps
+# World Map of Ad Impressions and Clicks
 
 ### Introduction
 This repository offers two kinds of solutions. First, it provides the functionality to create animated maps in HTML 
