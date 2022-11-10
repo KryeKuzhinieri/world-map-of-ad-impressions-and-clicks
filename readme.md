@@ -4,8 +4,9 @@
 1. Get your API key here: https://onboard.windsor.ai
 2. Enter it line 9 of `main.py` file.
 3. Run `pip install -r requirements.txt` and then `python main.py`
-4. Share your gif on Twitter.
+4. Share your gif on social media.
 
+You can run all the code on the cloud using this Google Collab Notebook: https://colab.research.google.com/drive/1i7AuoCwKQmLacZjT_mn9HpF-I48PNrsc?usp=sharing
 
 ### Introduction
 This repository offers two kinds of solutions. First, it provides the functionality to create animated maps in HTML 
@@ -81,5 +82,11 @@ generator.to_gif(driver_option="Chrome", duration=500)
 The final products are an HTML file and a gif image.
 ![](Images/world_map.gif)
 
-
 For more on connecting various ad platforms and plotting them into animated maps, visit: https://onboard.windsor.ai/
+
+### Implementation
+The implementation is done by using Folium and TimestampedGeoJson maps. The file is saved as html using default folium
+methods. However, the conversion from html to gif is done using Selenium. Make sure that you have your Google or Firefox
+drivers installed. You can install them by using `apt install chromium-chromedriver` or 
+`apt-get install firefox-geckodriver`. This works by opening a browser tab (in hidden state) and taking multiple screenshots
+of the html. The file png files then are converted to a single gif image.
