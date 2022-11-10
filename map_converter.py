@@ -213,6 +213,8 @@ class Map:
         options = getattr(webdriver, f"{driver_option}Options")()
         options.add_argument('window-size=1024x768')
         options.add_argument("--headless")
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
         driver = getattr(webdriver, driver_option)(options=options)
         file_path = f"file://{Path().resolve()}/{self.html_filename}"
         driver.get(file_path)
