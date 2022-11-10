@@ -23,7 +23,7 @@ class Map:
         self._colormap = None
         self._features = None
 
-    def to_gif(self, driver_option="Chrome"):
+    def to_gif(self, driver_option="Chrome", duration=500):
         """
         Takes the html file and converts it into a gif image.
 
@@ -31,6 +31,8 @@ class Map:
         ----------
         driver_option : string
             Selenium browser driver. It accepts Chrome and Firefox as parameters.
+        duration : int
+            Amount of time the entire animation should take.
 
         Returns
         -------
@@ -46,7 +48,7 @@ class Map:
             format="GIF",
             append_images=all_images[1:],
             save_all=True,
-            duration=1000,
+            duration=duration,
             loop=100
         )
         shutil.rmtree('tmp_dir', ignore_errors=True)
